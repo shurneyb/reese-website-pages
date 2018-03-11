@@ -1,0 +1,272 @@
+/*
+Global Styles
+*/
+
+body{ /*sets background gray color*/
+  background: #E0DCDC;
+}
+
+.row{ /*stops row from being wider that viewport width*/
+  width: 100%;
+}
+
+.container-fluid{ /*gets rid of gutter*/
+  padding: 0;
+}
+
+.items-right{ /*helper style in progress to move nav items right*/
+  margin-right: 0;
+}
+
+.buttons{ /*spaces buttons on page and centers them*/
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.buttons a{ /*shapes buttons and colors them*/
+  font-size: 1.4em;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 70px;
+}
+
+.white{ /*for white buttons*/
+  background-color: #FFFFFF;
+}
+
+.blue{ /*for blue buttons*/
+  background-color: #547592;
+  color: #FFFFFF;
+}
+
+nav a{ /*gets rid of default styling for nav elements and bolds them*/
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+nav a:hover{ /*gets rid of default style for hovering over nav items*/
+    text-decoration: none;
+}
+
+/*
+Homepage
+*/
+
+.header{ /*centers elements in homepage nav*/
+  margin: auto;
+}
+
+.header li{ /*spaces items in homepage nav*/
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#hero{ /*positions hero image*/
+  background-image: url("../img/pawel-chu-348970.png");
+  width: 100%;
+  height: 90vh;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+#logo{ /*positions logo*/
+  width: 80%; /*makes image responsive*/
+  position: absolute;
+  bottom: 45%; /*vertically centers logo*/
+  left: 11%; /*horizontally centers logo*/
+}
+
+#asset1{ /*sizes triangle below hero image*/
+  width:100%;
+  margin-bottom: 60px;
+}
+
+#text{ /*spaces paragraphs in body*/
+  margin-bottom: 30px;
+}
+
+#text h2{ /*makes h2 headers bigger and spaces them*/
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#text p{ /*changes body text size*/
+  font-size: 1.2em;
+}
+
+#text .row{ /*makes body paragraphs more readable by giving them margins and centers them*/
+  margin: auto;
+  width: 75%;
+  margin-bottom: 30px;
+}
+
+#foot{ /*positions polygon at the bottom of the page*/
+  background-image: url("../img/asset2-new.png");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+#foot h3{ /*makes h3 headers larger, changes color, centers them*/
+  color: #ffffff;
+  font-size: 3.5em;
+  margin: auto;
+  margin-top: 240px;
+  text-align: center;
+}
+
+footer{ /*makes footer white and reach across viewport width*/
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+footer img{ /*positions logo on footer*/
+  margin-left: 10%;
+  margin-right: 20%;
+  height: 70px;
+}
+
+footer nav{ /*spaces navigation in footer*/
+  margin-top: 20px;
+}
+
+footer a{ /*puts space between items in footer*/
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (max-width: 430px){ /*for mobile screens*/
+
+  #hero{ /*adjusts here image for smaller screens*/
+    background-image: url("../img/pawel-chu-348970.png");
+    width: 100%;
+    height: 40vh;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #text h2{ /*makes h2 headers smaller*/
+    font-size: 2em;
+  }
+
+  #text p{ /*makes body text smaller*/
+    font-size: 1em;
+  }
+
+  #foot h3{ /*makes h3 headers smaller and changes spacing*/
+    font-size: 3em;
+    margin-top: 150px;
+    margin-left: 25px;
+  }
+
+  .buttons{ /*adjusts button spacing for mobile*/
+    margin: 40px;
+    margin-right: 0;
+  }
+
+  .buttons a{ /*adjusts spacing for buttons*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #foot{ /*uses a smaller image for mobile*/
+    background-image: url("../img/asset2-mobile.png");
+  }
+}
+
+/*
+Course Offerings Page
+*/
+
+#course-offerings-hero{ /*positions hero image*/
+  background-image: url("../img/bluetint.png");
+  height: 90vh;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-faded{ /*makes nav bar translucent white*/
+  background-color: rgba(255, 255, 255, .8);
+}
+
+h1{ /*puts h1 in the bottom left of the hero image*/
+  font-size: 4em;
+  color: #FFFFFF;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+#course_offerings-foot{ /*postions polygon*/
+  background-image: url("../img/asset2-new.png");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+#course_offerings-foot h3{ /*sizes, colors and postions h3 "student projects"*/
+  color: #ffffff;
+  font-size: 4em;
+  margin: auto;
+  margin-top: 240px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.box{ /*makes width of student project boxes responsive*/
+  width: 30vw;
+}
+
+#course_offerings-foot p{ /*spaces student project boxes*/
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 430px){
+
+  #course-offerings-hero{ /*positions hero image*/
+    background-image: url("../img/bluetint.png");
+    width: 100%;
+    height: 40vh;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  h1{ /*makes h1 smaller*/
+    font-size: 2em;
+  }
+
+  #text h2{ /*makes h2 headers bigger and spaces them*/
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  #text p{ /*changes body text size*/
+    font-size: 1em;
+  }
+
+  #course_offerings-foot h3{ /*makes h3 headers smaller, changes spacing*/
+    font-size: 3em;
+    margin-top: 150px;
+    margin-left: 25px;
+    justify-content: center;
+  }
+
+  .buttons a{ /*changes button sizes*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #course_offerings-foot{ /*uses a smaller image for mobile*/
+    background-image: url("../img/asset2-mobile.png");
+  }
+}
