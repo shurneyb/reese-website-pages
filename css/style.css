@@ -4,6 +4,7 @@ Global Styles
 
 body{ /*sets background gray color*/
   background: #E0DCDC;
+  font-size: 16px;
 }
 
 .row{ /*stops row from being wider that viewport width*/
@@ -25,7 +26,8 @@ body{ /*sets background gray color*/
   margin-bottom: 40px;
 }
 
-.buttons a{ /*shapes buttons and colors them*/
+button{ /*shapes buttons and colors them*/
+  border: none;
   font-size: 1.4em;
   font-weight: 400;
   padding-top: 5px;
@@ -35,6 +37,7 @@ body{ /*sets background gray color*/
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 70px;
+  border-radius: 2px;
 }
 
 .white{ /*for white buttons*/
@@ -100,13 +103,14 @@ Homepage
   margin-bottom: 20px;
 }
 
-#text p{ /*changes body text size*/
-  font-size: 1.2em;
+#text h3{ /*makes h2 headers bigger and spaces them*/
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 #text .row{ /*makes body paragraphs more readable by giving them margins and centers them*/
   margin: auto;
-  width: 75%;
+  width: 60%;
   margin-bottom: 30px;
 }
 
@@ -155,12 +159,8 @@ footer a{ /*puts space between items in footer*/
     background-size: cover;
   }
 
-  #text h2{ /*makes h2 headers smaller*/
-    font-size: 2em;
-  }
-
-  #text p{ /*makes body text smaller*/
-    font-size: 1em;
+  #text .row{ /*makes body paragraphs more readable by giving them margins and centers them*/
+    width: 95%;
   }
 
   #foot h3{ /*makes h3 headers smaller and changes spacing*/
@@ -189,6 +189,7 @@ Course Offerings Page
 */
 
 #course-offerings-hero{ /*positions hero image*/
+  background-color: #B2D2DF; /*light blue*/
   background-image: url("../img/bluetint.png");
   height: 90vh;
   background-size: cover;
@@ -227,7 +228,12 @@ h1{ /*puts h1 in the bottom left of the hero image*/
   width: 30vw;
 }
 
-#course_offerings-foot p{ /*spaces student project boxes*/
+.project-title{
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.project-text{ /*spaces student project boxes*/
   margin-bottom: 50px;
 }
 
